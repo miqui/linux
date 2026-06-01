@@ -29,6 +29,11 @@ iostat -d -x -k /dev/sda 2
 iostat -c -d -x 2
 ```
 
+## List disk
+```
+lsblk -o NAME,SIZE,TYPE,MOUNTPOINT,FSTYPE
+```
+
 **Key columns to watch:**
 
 | Column  | Meaning                                          | Threshold to Investigate   |
